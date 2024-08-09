@@ -18,12 +18,21 @@ function create_password(){
     console.log(password);
 
     cmd_chars = uppercase + lowercase + symbols + numbers;   
+    console.log(cmd_chars);
 
     while(length > password.length){
-        password += numbers[Math.floor(Math.random*cmd_chars.length)];
+        password += cmd_chars[Math.floor(Math.random()*cmd_chars.length)];
     }
     console.log(password);
+    password_box.value = password;
 } 
-create_password();
+// the copy password function
+
+function copyPassword(){
+    password_box.select();
+    document.execCommand("copy");
+}
+
+
 
 // code by prateek saha

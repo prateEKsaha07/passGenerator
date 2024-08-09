@@ -8,15 +8,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>generate your own</h1>
-        <h2>new password</h2>
+        <h1>generate your own <br> <span> new password </span></h1>
 
         <div id="password-box">
-                <input type="text" id="password" placeholder="password">
-                <button class="button"><img src="assets/copy.png" alt="copy"></button>
-            <button id ="add_new" >new password</button>
-
+                <input type="text" id="password" placeholder="get your password">
+                <button class="button" onclick="copyPassword()" ><img class="image" src="assets/copy.png" alt="copy"></button>
         </div>
+        <button class="btn" onclick="create_password()">generate password</button>
     </div>
     <script src="script.js"></script>
 </body>
